@@ -134,6 +134,7 @@ const App = () => {
     <>
       <main>
         <div id="linha1" onChange={(e) => { handleLetra(e) }}>
+          {/* sempre que "linhaVez" muda de valor, os elementos Letra se redesenham, mudando o foco das linhas */}
           <Letra disabled={linhaVez - 1} class='c1' id='l1-c1' style={tabelaStyle[0].estilo} />
           <Letra disabled={linhaVez - 1} class='c2' id='l1-c2' style={tabelaStyle[1].estilo} />
           <Letra disabled={linhaVez - 1} class='c3' id='l1-c3' style={tabelaStyle[2].estilo} />
